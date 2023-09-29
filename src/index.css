@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1500px;
+    }
+  }
+
+  .Heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .HeadingExtra {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .Number {
+    font-size: 130px;
+    line-height: 100px;
+  }
+  .transition-2 {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.8s;
+  }
+}
