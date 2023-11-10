@@ -10,12 +10,12 @@ const About = () => {
   };
 
   return (
-    <section className="container mx-auto flex flex-col gap-8">
-      <div className=" w-[80%] mx-auto md:w-full flex justify-center flex-col md:gap-14 ">
-        <h1 className="w-full md:w-[70%] mx-auto   md:text-center text-3xl lg:Heading">
-          A Global Presence with a New <br /> York State of Mind.
+    <section className="container h-[550px] md:h-auto mx-auto flex flex-col gap-8">
+      <div className="  mx-auto md:w-full flex justify-center flex-col gap-10 md:gap-14 ">
+        <h1 className="w-full md:w-[80%] lg:w-[60%] mx-auto tracking-wider   md:text-center Heading">
+          A Global Presence with a New York State of Mind.
         </h1>
-        <p className=" w-full md:w-[60%] mx-auto tracking-wide  md:text-center">
+        <p className=" w-full md:w-[80%] lg:w-[60%] mx-auto md:tracking-wide  md:text-center">
           Our web design agency has propelled the growth of our partners through
           innovation and creative strategy. We started as a Long Island web
           design company and evolved into a full-service digital agency,
@@ -25,7 +25,7 @@ const About = () => {
         </p>
       </div>
       <div className=" w-full">
-        <div className=" p-5 relative">
+        <div className=" relative ">
           <video
             ref={videoRef}
             src="https://bowen-assets.nyc3.cdn.digitaloceanspaces.com/bowen-company-video-2020.mp4?mtime=20200217123146"

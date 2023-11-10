@@ -33,9 +33,9 @@ const StaffProfile = () => {
     beforeChange: (current, next) => setState({ activeSlide: next }),
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -53,14 +53,20 @@ const StaffProfile = () => {
   //components to display as slide-items
   const staffComponent = staff.map((each) => {
     return (
-      <div key={nanoid()} className="relative  h-[600px] overflow-x-hidden">
+      <div
+        key={nanoid()}
+        className="relative h-[400px]  lg:h-[600px] overflow-x-hidden">
         {each.id == state.activeSlide + 1 ? (
-          <img src={each.gif} alt="" className=" w-[90%] h-full object-cover" />
+          <img
+            src={each.gif}
+            alt=""
+            className=" w-full sm:w-[90%]  md:w-[90%] h-full object-cover"
+          />
         ) : (
           <img
             src={each.img}
             alt=""
-            className=" w-[90%] h-full object-cover"
+            className="w-full   sm:w-[90%] md:w-[90%] h-full object-cover"
             lazyLoad
           />
         )}
@@ -71,9 +77,9 @@ const StaffProfile = () => {
   const staffDisplayed = staff.find((each) => each.id == state.activeSlide + 1);
 
   return (
-    <div className="w-[87%] ms-auto flex justify-between items-center gap-3 flex-wrap">
+    <div className="lg:w-[90%]   w-full flex-col lg:flex-row  lg:ms-auto    flex justify-between items-center gap-3 flex-wrap">
       {/* left */}
-      <div className=" w-[22%] h-[80%] flex  flex-col ">
+      <div className=" lg:w-[22%] w-full md:w-[80%] h-[80%] flex  flex-col ">
         <h1 className="Heading md:mb-8">We're the good kind of crazy.</h1>
         <div className=" w-10 h-[3px] bg-black  my-4"></div>
         <div className="text-justify tracking-wide  ">
@@ -83,7 +89,7 @@ const StaffProfile = () => {
         </div>
       </div>
       {/* right */}
-      <div className={` relative md:w-[75%] w-full `}>
+      <div className={` relative md:w-full lg:w-[70%] w-full `}>
         <Slider {...settings} ref={sliderRef}>
           {staffComponent}
         </Slider>

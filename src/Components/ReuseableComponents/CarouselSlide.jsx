@@ -28,7 +28,6 @@ const CarouselSlide = (props) => {
       </div>
     );
   });
-  console.log(props.controls);
   return (
     <div className={` relative   ${props?.width || "md:w-[53%] w-full "}`}>
       {props.controls && (
@@ -60,8 +59,7 @@ const styleTailwind = {
 };
 
 //Used this fun in
-//No 1.Partners Section of Company Pages
-
+// No used yet
 //Concept
 // if you omit controls props, must include autoplay=true props
 //to work carousel

@@ -35,8 +35,8 @@ const HoverSlide = (props) => {
               props.width ? props.width : "md:w-[47%]"
             } ${props.height ? props.height : "h-[600px]"} h-full   relative ${
               index % 2 && "  md:translate-y-28"
-            } `}>
-            <div className="flex justify-between relative hover_Slide  transition-all overflow-hidden">
+            } shadow-lg`}>
+            <div className="flex  justify-between relative hover_Slide  transition-all overflow-hidden">
               <div
                 className={`${
                   props.height ? props.height : "h-[600px]"
@@ -46,15 +46,18 @@ const HoverSlide = (props) => {
                   alt=""
                   className=" object-cover w-full"
                 />
-                <div className=" w-[80%] z-30 py-9 absolute flex flex-col justify-between h-full">
-                  <h1>{each.Work_Title} </h1>
-                  <div className=" ">
+                <div className=" transparentOnCard  w-full z-30 p-9 absolute flex flex-col justify-between h-full">
+                  <h1 className=" WorkTitleSmall">{each.Work_Title} </h1>
+                  <div className="flex ">
                     {each.Tabs.map((eachTag) => (
-                      <span
+                      <div
                         key={nanoid()}
-                        className=" border-e-2 pe-2 border-black">
-                        {eachTag}
-                      </span>
+                        className=" flex gap-2 me-2 items-center">
+                        <span className=" tracking-wide uppercase text-xs md:text-base font-bold">
+                          {eachTag}
+                        </span>
+                        <div className=" h-5 w-[1.8px] bg-white"></div>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -64,19 +67,19 @@ const HoverSlide = (props) => {
                 className={`w-full ${
                   props.height ? props.height : "h-[600px]"
                 }   animationSlide 
-                bg-blue-200 
+            
                 `}></div>
               <div
                 className={`absolute View_Project_Link text-white top-[60%] ${
                   index % 2 || props.right ? "right-[-10%]" : "left-[-10%]"
-                } z-10`}>
+                } z-10 WorkTitle border-b-2 border-white`}>
                 {each.pointer}
               </div>
             </div>
             <div
-              className={`absolute View_Project_Link text-black top-[60%] ${
+              className={`absolute  hover_Slide_Blackpointer View_Project_Link text-black top-[60%] ${
                 index % 2 || props.right ? "right-[-10%]" : "left-[-10%]"
-              } -z-10`}>
+              } -z-10 WorkTitle  border-b-2 border-black`}>
               {each.pointer}
             </div>
           </Link>
