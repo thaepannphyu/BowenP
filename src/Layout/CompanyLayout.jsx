@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Components/GlobalComponent/Footer";
 import { Outlet } from "react-router-dom";
-import Navbar from "../pages/Navbar";
+import Navbar from "../Pages/Navbar";
 
 const CompanyLayout = () => {
   return (

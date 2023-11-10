@@ -1,7 +1,7 @@
 import React from "react";
 import HoverSlide from "../Components/ReuseableComponents/HoverSlide";
 import "../App.css";
-import { workdata } from "../data/Work";
+import { workdata } from "../Data/Work";
 
 const Work = () => {
   return (

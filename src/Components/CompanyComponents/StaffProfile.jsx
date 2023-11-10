@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { staff } from "../../data/Staff";
+import { staff } from "../../Data/Staff";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
