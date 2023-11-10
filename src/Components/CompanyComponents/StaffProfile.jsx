@@ -23,7 +23,7 @@ const StaffProfile = () => {
     centerPadding: "0px",
     slidesToShow: 2,
     useCSS: true,
-    lazyLoad: true,
+    
     speed: 500,
     rows: 1,
     slidesPerRow: 1,
@@ -67,7 +67,7 @@ const StaffProfile = () => {
             src={each.img}
             alt=""
             className="w-full   sm:w-[90%] md:w-[90%] h-full object-cover"
-            lazyLoad
+            
           />
         )}
       </div>
