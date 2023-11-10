@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "../../App.css";
 import { nanoid } from "@reduxjs/toolkit";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import CompanyAnimation from "../ReuseableComponents/CompanyANimation";
+import CompanyAnimation from "../ReuseableComponents/CompanyAnimation";
 const Form = () => {
   const [data, setData] = useState({
     name: "",

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { Partners } from "../../Data/Partners";
+import { Partners } from "../../data/Partners";
 import { nanoid } from "@reduxjs/toolkit";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

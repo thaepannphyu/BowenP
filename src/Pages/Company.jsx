@@ -3,7 +3,7 @@ import ComLanding from "../Components/CompanyComponents/ComLanding";
 import StaffProfile from "../Components/CompanyComponents/StaffProfile";
 import Values from "../Components/CompanyComponents/Values";
 import Latest from "../Components/CompanyComponents/Latest";
-import Footer from "../Components/GlobalComponent/Footer";
+
 import About from "../Components/CompanyComponents/About";
 import PartnerSection from "../Components/CompanyComponents/PartnerSection";
 const Company = () => {

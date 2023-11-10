@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Form from "./Form";
 import Call from "./Call";
-import Navbar from "../../Pages/Navbar";
+
 
 const ContactUs = () => {
   const [selectPage, setSelectPage] = useState(true);

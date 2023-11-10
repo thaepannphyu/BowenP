@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { nanoid } from "@reduxjs/toolkit";
-import { value } from "../../Data/Values";
-import CompanyAnimation from "../ReuseableComponents/CompanyANimation";
+import { value } from "../../data/Values";
+import CompanyAnimation from "../ReuseableComponents/CompanyAnimation,jsx";
 
 const Values = () => {
   //setting state
