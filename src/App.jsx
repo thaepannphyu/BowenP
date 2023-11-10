@@ -2,7 +2,7 @@ import React from "react";
 import Work from "./pages/Work";
 import { Routes, Route } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
-import Company from "./pages/Company";
+import Company from "./Pages/Company.jsx";
 import CompanyLayout from "./layout/CompanyLayout";
 import "./App.css";
 
