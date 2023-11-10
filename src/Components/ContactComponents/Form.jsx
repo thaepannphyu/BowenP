@@ -170,6 +170,7 @@ const Form = () => {
           <datalist id="list" className=" flex flex-col gap-2 w-full ">
             {list.map((each) => (
               <div
+                key={nanoid()}
                 onClick={() => setTagSelect(each)}
                 className=" hover:bg-[#5897fb] p-2">
                 {each}

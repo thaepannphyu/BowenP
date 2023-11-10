@@ -2,13 +2,13 @@ import React from "react";
 
 // props
 
-// underline =>underline under parents
+// underline =>underline under btn parents
 //         Needed to give className("hoverParent relative") to parents element
 //Usage
 //1.Value Page btn
 //2.StaffPage Btn
 
-//hoverUp  =>a div is climb up
+//hoverUp  =>a div is climb up only one
 //Uasge
 //1.Latest Bowen page card
 

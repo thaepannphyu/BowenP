@@ -4,7 +4,7 @@ import ContactUs from "../Components/ContactComponents/ContactUs";
 
 const Contact = () => {
   return (
-    <section className="  relative  mx-auto flex ">
+    <section className=" overflow-hidden mx-auto flex ">
       <ContactUs />
     </section>
   );

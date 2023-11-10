@@ -8,13 +8,14 @@ import About from "../Components/CompanyComponents/About";
 import PartnerSection from "../Components/CompanyComponents/PartnerSection";
 const Company = () => {
   return (
-    <main className="  flex flex-col md:gap-44 mb-44">
+    <main className="main-content  lg:main-content-lg  mx-auto mt-16 md:mt-11  flex flex-col gap-14 md:gap-44 mb-44 overflow-hidden">
       <ComLanding />
       <About />
       <StaffProfile />
       <Values />
       <PartnerSection />
       <Latest />
+      {/* done raw*/}
     </main>
   );
 };

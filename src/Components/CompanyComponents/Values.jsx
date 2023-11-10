@@ -37,25 +37,25 @@ const Values = () => {
   const numberDisplay = value.find((each) => each.id == state.activeSlide + 1);
 
   return (
-    <div className="container  mx-auto  flex justify-between flex-wrap items-center gap-y-36 overflow-hidden">
-      <div className="w-full text-center mx-auto text-3xl">
-        Our creative agency consists of a close-knit group of passionate
-        innovators, designers,
-        <br /> web developers, self-starters, and producers. Our gifted team
-        prides ourselves in
-        <br /> honing our hard-earned expertise, creating rewarding client
-        experiences, and
-        <br /> perfecting our craft.
+    <div className="lg:w-[75%] container  mx-auto  flex justify-between flex-wrap items-center gap-y-5 md:gap-y-36 overflow-hidden">
+      <div className="order-1 md:order-1 w-full md:text-center mx-auto  ">
+        <p className=" text-base md:text-2xl lg:text-3xl w-full md:w-[72.7%] mx-auto">
+          Our creative agency consists of a close-knit group of passionate
+          innovators, designers, web developers, self-starters, and producers.
+          Our gifted team prides ourselves in honing our hard-earned expertise,
+          creating rewarding client experiences, and perfecting our craft.
+        </p>
       </div>
       {/* left */}
-      <div className="w-full md:w-[30%]  flex flex-col flex-wrap overflow-hidden  justify-center ">
-        <div className="md:w-[80%] px-5 py-10 w-full h-full  flex flex-col flex-wrap justify-between  md:gap-8">
-          <h1 className="">OUR CORE VALUES</h1>
+
+      <div className="order-3 md:order-2 w-full md:w-[30%]   flex flex-col flex-wrap overflow-hidden  justify-center ">
+        <div className=" lg:px-5 py-10 w-full h-full  flex flex-col flex-wrap justify-between  md:gap-8">
+          <h1 className=" hidden md:block">OUR CORE VALUES</h1>
           <h1 className="Heading ">{numberDisplay.value}</h1>
           <p className=" h-[100px] me-auto   text-justify tracking-wider  ">
             {numberDisplay.description}
           </p>
-          <div className=" md:w-[40%] lg:w-[50%] flex justify-between ">
+          <div className=" mt-8 md:mt-5 lg:mt-0 w-[50%]  lg:w-[50%] flex justify-between ">
             <button
               className=" relative hoverParent"
               onClick={() => sliderRef.current.slickPrev()}>
@@ -73,11 +73,12 @@ const Values = () => {
         </div>
       </div>
       {/* right */}
-      <div className=" w-[60%] relative">
+      <div className="order-2 md:order-3 w-full md:w-[60%] relative">
+        <h1 className=" my-8 md:hidden">OUR CORE VALUES</h1>
         <Slider {...settings} ref={sliderRef}>
           {valueDisplayed}
         </Slider>
-        <div className=" Number tracking-widest text-center absolute top-[-20%] left-[-4%] z-10">
+        <div className=" Number tracking-widest text-center absolute top-[10%] md:top-[-15%] lg:left-[-80%] right-[3%]  z-10">
           {numberDisplay.id > 10 ? (
             numberDisplay.id
           ) : (
