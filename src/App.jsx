@@ -1,5 +1,5 @@
 import React from "react";
-import Work from "./pages/Work";
+import Work from "./Pages/Work";
 import { Routes, Route } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
 import Company from "./Pages/Company.jsx";
