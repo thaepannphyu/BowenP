@@ -1,7 +1,6 @@
 import React from "react";
-import Values from "./Values";
-import HoverSlide from "../ReuseableComponents/HoverSlide";
-import CompanyAnimation from "../ReuseableComponents/CompanyANimation";
+import HoverSlide from "../ReuseableComponents/HoverSlide.jsx";
+import CompanyAnimation from "../ReuseableComponents/CompanyAnimation.jsx";
 import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 

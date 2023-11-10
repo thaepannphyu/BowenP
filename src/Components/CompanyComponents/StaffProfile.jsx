@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
-import { staff } from "../../Data/Staff";
+import { staff } from "../../data/Staff";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { nanoid } from "@reduxjs/toolkit";
-import CompanyAnimation from "../ReuseableComponents/CompanyANimation";
+import CompanyAnimation from "../ReuseableComponents/CompanyAnimation";
 
 const StaffProfile = () => {
   //setting state
