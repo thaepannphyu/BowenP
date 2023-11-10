@@ -1,14 +1,14 @@
 import React from "react";
 import Work from "./Pages/Work";
 import { Routes, Route } from "react-router-dom";
-import HomeLayout from "./layout/HomeLayout";
+import HomeLayout from "./Layout/HomeLayout";
 import Company from "./Pages/Company.jsx";
-import CompanyLayout from "./layout/CompanyLayout";
+import CompanyLayout from "./Layout/CompanyLayout";
 import "./App.css";
 
 import Contact from "./pages/Contact";
 
-import ContactLayout from "./layout/ContactLayout";
+import ContactLayout from "./Layout/ContactLayout";
 
 const App = () => {
   return (
